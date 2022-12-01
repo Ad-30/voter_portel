@@ -1,0 +1,89 @@
+
+
+  <%- include("partials/header");-%>
+  <style media="screen">
+    .main-div{
+      border-style:groove;
+      border-radius:10px;
+      margin-bottom:10px;
+      margin-top:10px;
+      margin-right:50px;
+      padding-left:40px;
+      padding-top:40px;
+
+    }
+    .main-div:hover {
+      box-shadow: 4px 4px 20px #dddddd;
+    }
+  </style>
+
+<%data.forEach(function(data){%>
+  <%if (id === data._id.toString().replace(/[^a-z0-9]/g, '')) {%>
+    <div class="main-div">
+      <div class="row"id="div-width-main">
+        <div class="col-lg-6">
+          <p>First name &nbsp &nbsp &nbsp : <%=data.firstName %></p>
+        </div>
+        <div class="col-lg-6 "id="div-width">
+          <p>Last name &nbsp&nbsp&nbsp&nbsp: <%=data.lastName %></p>
+        </div>
+        <div class="col-lg-6">
+          <p>Father's name : <%=data.fathersName %></p>
+          </div>
+        <div class="col-lg-6 "id="div-width">
+
+          <%  var date = data.dob;
+          var year = date.toLocaleString("default", { year: "numeric" });
+          var month = date.toLocaleString("default", { month: "2-digit" });
+          var day = date.toLocaleString("default", { day: "2-digit" });
+          var formattedDate = day + "-" + month + "-" + year;%>
+          <p>D.O.B &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <%= formattedDate %></p>
+        </div>
+        <div class="col-lg-6">
+          <p>E-mail &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <%=data.email %></p>
+        </div>
+        <div class="col-lg-6 "id="div-width">
+          <p>Mobile no. &nbsp&nbsp&nbsp&nbsp: <%=data.mob %></p>
+        </div>
+        <div class="col-lg-6">
+
+
+            <p>House no. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <%=data.address.house_no %></p>
+
+
+        </div>
+        <div class="col-lg-6"id="div-width">
+          <p>Locality  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <%=data.address.locality %></p>
+
+
+        </div>
+        <div class="col-lg-6"id="div-width">
+          <p>Road name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <%=data.address.road_name %></p>
+        </div>
+        <div class="col-lg-6"id="div-width">
+          <p>Pincode  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <%=data.address.pincode %></p>
+        </div>
+        <div class="form-group col-lg-6">
+          <p>State &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <%=data.address.state %></p>
+        </div>
+        <div class="form-group col-lg-6">
+          <p>District  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <%=data.address.district %></p>
+        </div>
+        <div class="col-lg-6">
+          <p>Identity type  &nbsp&nbsp&nbsp&nbsp: <%=data.identity_type %></p>
+        </div>
+
+        <div class="col-lg-6">
+          <p>Identity number  : <%=data.identity_no %></p>
+
+          </div>
+
+        <div class="division-submit"><a href="/application"><input class="btn btn-primary btn1"type="submit" name="" value="Submit"></a>
+      </div></div>
+
+      </div>
+
+  <%}%>
+
+  <%})%>
+<%- include("partials/footer");-%>

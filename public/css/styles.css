@@ -1,0 +1,236 @@
+/* Body */
+body {
+  font-family: Montserrat;
+}
+
+h1 {
+  color: black;
+  font-family: Montserrat;
+  font-size: 3rem;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.row {
+  /* background-color: rgb(163,210,211); */
+}
+
+#title {
+  background-color: rgb(163, 210, 211);
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+  /* background-color: rgb(163,210,211); */
+}
+
+/* Navbar */
+.navbar-brand :hover {
+  color: rgb(163, 210, 211);
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.nav-item {
+  position: relative;
+  right: 20px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  /* opacity: 90%; */
+}
+
+.tex {
+  color: #8f8f8f;
+}
+
+/* dividion 2 */
+@media (max-width: 420px) {
+  .functions-1 {
+    font-family: Montserrat;
+    position: relative;
+    left: 200px;
+    top: 20px;
+  }
+}
+
+@ .voter-image {}
+
+/* Slides */
+#testimonials {
+  text-align: center;
+  background-color: rgb(254, 244, 173);
+  /* #ef8172 */
+  color: #fff;
+}
+
+.dev {
+  /* background-color: rgb(163,210,211); */
+}
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  /* background-color: rgb(163,210,211); */
+  /* #ef8172 */
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.collapse {
+  /* background-color: rgb(163,210,211); */
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 10%;
+}
+
+/* FOOTER */
+.footer {
+  height: 300px;
+}
+
+#footer-1 {
+  position: relative;
+  left: 60%;
+}
+
+.btn {
+  position: relative;
+  top: 30px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  position: relative;
+  left: 45%;
+  top: 40%;
+}
+
+.copyright {
+  position: relative;
+  left: 42.6%;
+  top: 40%;
+  width: 300px;
+}
+
+/* .container-fluid{
+  padding: 7% 15%;
+} */
+.footer-icon {
+  color: black;
+}
+
+.photo {
+  width: 10rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+}
+
+/* #functions{
+  text-align: center;
+} */
+@media (max-width: 1028px) {
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    align-items: center;
+  }
+}
+
+#functions {
+  /* width: 1420px; */
+}
+
+/* For mobile devices */
+@media (min-width: 0px) and (max-width: 768px) {
+  .functions-1 {
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+
+  #functions {
+    text-align: center;
+  }
+
+  #testimonials {
+    height: 200px;
+  }
+
+  .testimonial-text {
+    position: relative;
+    top: 3.4rem;
+  }
+}
+
+/* For Ipads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .functions-1 {
+    text-align: center;
+    position: relative;
+    top: 45px;
+  }
+
+  .title-image {
+    position: relative;
+    left: 40%;
+  }
+}
+
+/* For laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .functions-1 {
+    text-align: center;
+    position: relative;
+    left: 50px;
+    top: 30px;
+  }
+
+  .title-image {
+    position: relative;
+    left: 40%;
+  }
+
+  .functions {
+    font-family: Montserrat;
+  }
+}

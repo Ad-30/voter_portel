@@ -1,0 +1,67 @@
+.s1 {
+  background-color: red;
+}
+
+.s2 {
+  background-color: blue;
+}
+
+.s3 {
+  background-color: green;
+}
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+.navbar {
+  background-color: pink;
+}
+
+.check-1 {
+  margin-left: 65%;
+}
+
+body{
+  height: 100%;
+ width: 100%;
+}
+
+.check8{
+  border: 1px black solid;
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#check7{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+html,
+body { height: 100%;
+}
+.parent {
+height: 200px;
+background: #CCCCCC;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.child {
+background-color: #FFFF00;
+width: 100px;
+height: 100px;
+}

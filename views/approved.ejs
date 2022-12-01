@@ -1,0 +1,178 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apply</title>
+
+
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/apply.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/850c737ebd.js" crossorigin="anonymous"></script>
+   <!-- Google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+
+        <a class="navbar-brand title" href="/verify" style="color:black;">Voter Portal</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+
+            <!-- <li class="nav-item">
+
+            <a class="nav-link" href="signup.html">Login</a>
+
+          </li> -->
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="/verify">Pending</a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="/disapproved">Disapproved</a>
+
+
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </nav>
+    </div>
+  </section>
+<style media="screen">
+  .main-div{
+    border-style:groove;
+    border-radius:10px;
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-right:50px;
+    padding-left:40px;
+    padding-top:40px;
+  }
+  .right{
+    margin-right:900px;
+    position : relative;
+    left:900px;
+    bottom:126.5px;
+    width:0%;
+  }
+  .btn11{
+    background-color:green!important;
+    border-color:white!important;
+  }
+  .btn12{
+    background-color:red!important;
+    border-color:white!important;
+  }
+  .dis-color{
+    height:10px;
+    width:100%;
+    background-color:green;
+  }
+</style>
+<%data.forEach(function(data){%>
+ <%if (data.status === "Approved") {%>
+    <div class="main-div">
+
+
+
+      <div class="row"id="div-width-main">
+        <div class="col-lg-6">
+          <p>First name : <%=data.firstName %></p>
+        </div>
+        <div class="col-lg-6 "id="div-width">
+          <p>Last name : <%=data.lastName %></p>
+        </div>
+        <div class="col-lg-6">
+          <p>Father's name : <%=data.fathersName %></p>
+          </div>
+        <div class="col-lg-6 "id="div-width">
+
+          <%  var date = data.dob;
+          var year = date.toLocaleString("default", { year: "numeric" });
+          var month = date.toLocaleString("default", { month: "2-digit" });
+          var day = date.toLocaleString("default", { day: "2-digit" });
+          var formattedDate = day + "-" + month + "-" + year;%>
+          <p>D.O.B name : <%= formattedDate %></p>
+        </div>
+        <div class="col-lg-6">
+          <p>E-mail : <%=data.email %></p>
+        </div>
+        <div class="col-lg-6 "id="div-width">
+          <p>Mobile no.  : <%=data.mob %></p>
+        </div>
+        <div class="col-lg-6">
+            <p>House no : <%=data.address.house_no %></p>
+        </div>
+        <div class="col-lg-6"id="div-width">
+          <p>Locality  : <%=data.address.locality %></p>
+
+
+        </div>
+        <div class="col-lg-6"id="div-width">
+          <p>Road name : <%=data.address.road_name %></p>
+        </div>
+        <div class="col-lg-6"id="div-width">
+          <p>Pincode  : <%=data.address.pincode %></p>
+        </div>
+        <div class="form-group col-lg-6">
+          <p>State  : <%=data.address.state %></p>
+        </div>
+        <div class="form-group col-lg-6">
+          <p>District  : <%=data.address.district %></p>
+        </div>
+        <div class="col-lg-6">
+          <p>Identity type  : <%=data.identity_type %></p>
+        </div>
+
+        <div class="col-lg-6">
+          <p>Identity number  : <%=data.identity_no %></p>
+
+          </div>
+
+          <div class="dis-color">
+
+          </div></div>
+</div>
+
+
+
+  <%}%>
+  <%})%>
+<%- include("partials/footer");-%>

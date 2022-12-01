@@ -1,0 +1,51 @@
+  <%- include("partials/header");-%>
+  <%data.forEach(function(data){%>
+
+    <%if (id === data._id.toString().replace(/[^a-z0-9]/g, '')) {%>
+  <!-- <div class="row"id="div-width-main"> -->
+<div class="main-div">
+    <h5>Application id :<%=id%> </h5>
+
+
+
+
+  <div class="row"id="div-width-main">
+    <div class="col-lg-6">
+      <p>First name : <%=data.firstName %></p>
+    </div>
+    <div class="col-lg-6 "id="div-width">
+      <p>Last name : <%=data.lastName %></p>
+    </div>
+    <div class="col-lg-6">
+      <p>Father's name : <%=data.fathersName %></p>
+      </div>
+    <div class="col-lg-6 "id="div-width">
+      <%  var date = data.dob;
+      var year = date.toLocaleString("default", { year: "numeric" });
+      var month = date.toLocaleString("default", { month: "2-digit" });
+      var day = date.toLocaleString("default", { day: "2-digit" });
+      var formattedDate = day + "-" + month + "-" + year;%>
+      <p>D.O.B name : <%= formattedDate %></p>
+
+    </div>
+    <div class="col-lg-6">
+      <p>E-mail : <%=data.email %></p>
+    </div>
+    <div class="col-lg-6 "id="div-width">
+      <p>mobile no.  : <%=data.mob %></p>
+    </div>
+    <h5>Current status : <%=data.status %></h5>
+    <%if (data.status === "Disapproved") {%>
+      <h6>Go through apply process again with correct document</h6>
+    <%}%>
+    <%if (data.status === "Approved") {%>
+      <h6>Download the voter card from below button</h6>
+    <%}%>
+    </div>
+    </div>
+    <%}%>
+ <%});%>
+
+
+
+  <%- include("partials/footer");-%>

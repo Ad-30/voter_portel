@@ -1,0 +1,33 @@
+.fname{
+  margin-left: 0.2%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-style: dotted;
+}
+.email{
+  margin-left: ;
+}
+
+.border1{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-style: dotted;
+
+}
+
+.btn1{
+  margin-bottom: 7%;
+
+}
+.division-submit{
+  text-align: center;
+}
+
+.main-div{
+  margin-left: 4%;
+}
+#div-width-main{
+  width: 99%;
+}

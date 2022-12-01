@@ -1,0 +1,160 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* .status{
+  border: 1px solid black;
+  position: relative;
+  left: 3rem;
+  right: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 1px #dddddd;
+} */
+/* for mobile */
+@media (min-width: 0px) and (max-width: 768px) {
+  .status {
+    border: 1px solid black;
+    position: relative;
+    left: 23%;
+    /* right: 6.25rem; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 10px #dddddd; */
+  }
+
+  .status:hover {
+    box-shadow: 4px 4px 20px #dddddd;
+  }
+
+  .application-heading {
+    position: relative;
+    left: 25%;
+    font-family: Montserrat;
+  }
+
+  label {
+    font-size: 1.5rem;
+    position: relative;
+    font-family: Montserrat;
+    top: 4rem;
+  }
+
+  .application-num {
+    position: relative;
+    top: 7rem;
+  }
+
+  .status-submit {
+    position: relative;
+    top: 7.2rem;
+    width: 50%;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+/* For laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .status {
+    border: 1px solid black;
+    /* position: relative;
+    left: 570px; */
+    margin-left: 39.583%;
+    /* right: 35.625rem; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 10px #dddddd; */
+  }
+
+  .status:hover {
+    box-shadow: 4px 4px 20px #dddddd;
+  }
+
+  .application-heading {
+    position: relative;
+    left: 38%;
+    margin-right: 60%;
+    font-family: Montserrat;
+  }
+
+  label {
+    font-size: 1.5rem;
+    position: relative;
+    font-family: Montserrat;
+    top: 4rem;
+  }
+
+  .application-num {
+    position: relative;
+    top: 7rem;
+  }
+
+  .status-submit {
+    position: relative;
+    top: 7.2rem;
+    width: 50%;
+    width: 100px;
+    /*   */
+  }
+}
+
+/* For Ipads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .status {
+    border: 1px solid black;
+    position: relative;
+    left: 30%;
+    /* right: 35.625rem; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 10px #dddddd; */
+  }
+
+  .status:hover {
+    box-shadow: 4px 4px 20px #dddddd;
+  }
+
+  .application-heading {
+    position: relative;
+    left: 28%;
+    font-family: Montserrat;
+  }
+
+  label {
+    font-size: 1.5rem;
+    position: relative;
+    font-family: Montserrat;
+    top: 4rem;
+  }
+
+  .application-num {
+    position: relative;
+    top: 7rem;
+  }
+
+  .status-submit {
+    position: relative;
+    top: 7.2rem;
+    width: 50%;
+    width: 100px;
+    height: 30px;
+  }
+}
