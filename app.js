@@ -16,7 +16,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 let id = "";
 let application_number = "";
-mongoose.connect('mongodb+srv://aditya:jpRuMoJrw5KdwIox@cluster0.x9qucfu.mongodb.net/voterDB');
+mongoose.connect('mongodb+srv://****************ENTER YOUR MONGODB STRNG HERE*******************');
 const dataSchema = {
   firstName : String,
   lastName : String,
