@@ -1,122 +1,127 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <title>Apply</title>
+  <!DOCTYPE html>
+  <html lang="en">
 
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/apply.css">
+    <title> Voter Registration Portal </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicons -->
+    <!-- <link href="/img/favicon.png" rel="icon">
+    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/850c737ebd.js" crossorigin="anonymous"></script>
-  <!-- Google fonts -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
- <style media="screen">
- .main-div{
-   border-style:groove;
-   border-radius:10px;
-   margin-bottom:10px;
-   margin-top:10px;
-   margin-right:50px;
-   padding-left:40px;
-   padding-top:40px;
-
- }
- .main-div:hover {
-   box-shadow: 4px 4px 20px #dddddd;
- }
- </style>
-</head>
-
-<body>
-
-  <section id="title">
-    <div class="container-fluid">
-      <!-- Nav Bar -->
-
-      <nav class="navbar navbar-expand-lg navbar-dark ">
-
-        <a class="navbar-brand title" href="index.html" style="color:black;">Voter Portal</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ms-auto">
-
-            <!-- <li class="nav-item">
-
-            <a class="nav-link" href="signup.html">Login</a>
-
-          </li> -->
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="news.html">News</a>
-
-            </li>
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="#jump">Contact us</a>
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
 
-            </li>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/apply.css">
 
-          </ul>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/850c737ebd.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <style>
+  .error {
+    border: 2px solid red;
+  }
+</style>
+
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+          <h1><a href="/">Voter Registration Portal </a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
 
-      </nav>
-    </div>
-  </section>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="home1">Home</a></li>
+            <li><a class="nav-link scrollto" href="aboutus">About</a></li>
+            <li><a class="nav-link scrollto" href="apply">Registeration Forms</a></li>
 
+            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="status">Check Status of application</a></li>
+
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="getstarted scrollto" href="signup">Get Started</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div>
+    </header>
       <h2>Enter your details</h2>
-    <div class="main-div">
-      <form class="apply-form" action="/apply" method="post">
+    <div class="main-div" style="margin-top:100px;">
+      <form class="apply-form" action="/apply" method="post" enctype="multipart/form-data" id="form">
         <div class="row"id="div-width-main">
           <div class="col-lg-6">
             <label for="">First name &nbsp &nbsp &nbsp :</label>
-            <input class="fname border1 "type="text" name="fname" value="" placeholder="First name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+            <input  required class="fname border1 "type="text" name="fname" value="" id="fname" placeholder="First name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" oninput="validateName()"  onsubmit="validateName()">
+            <span id="name-error"></span>
           </div>
           <div class="col-lg-6 "id="div-width">
             <label for="">Last name &nbsp&nbsp&nbsp&nbsp:</label>
-            <input class="border1 " type="text" name="lname" value="" placeholder="Last name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+            <input  required class="border1 " type="text" name="lname" value="" placeholder="Last name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
           </div>
           <div class="col-lg-6">
             <label for="">Father's name :</label>
-            <input class="border1 "type="text" name="fathersName" value="" placeholder="Father's name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+            <input  required class="border1 "type="text" name="fathersName" value="" placeholder="Father's name" >
           </div>
           <div class="col-lg-6 "id="div-width">
             <label for="">Date of birth :</label>
-            <input class="border1 "type="date" name="dob" value="" placeholder="D.O.B">
+            <input  required class="border1 "type="date" name="dob" value="" placeholder="D.O.B" id="dob">
           </div>
           <div class="col-lg-6">
             <label for="">E-mail &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
 
-            <input class="email  border1"type="email" name="email" value="@gmail.com" placeholder="Enter e-mail">
+            <input   required class="email  border1"type="email" name="email" value="@gmail.com" placeholder="Enter e-mail">
           </div>
           <div class="col-lg-6 "id="div-width">
             <label for="">Mobile no. &nbsp&nbsp&nbsp&nbsp:</label>
-            <input class=" border1"type="tel" name="mob" value="+91" maxlength="13">
+            <input  required class=" border1"type="tel" name="mob" value="" pattern="[0-9]*" maxlength="10" required>
           </div>
           <div class="col-lg-6">
             <label for="">Address &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
@@ -124,13 +129,13 @@
           </div>
           <div class=""id="div-width">
           <input id="address-length"class=" border1 "type="text" name="address_locality" value="" placeholder="Locality">
-          <input id="address-length"class=" border1 "type="text" name="address_road" value="" placeholder="Road name">
-          <input id="address-length"class=" border1 "type="text" name="address_pincode" value="" placeholder="Pincode" maxlength="6" minlength="6">
+          <input  required id="address-length"class=" border1 "type="text" name="address_road" value="" placeholder="Road name">
+          <input required  id="address-length"class=" border1 "type="text" name="address_pincode" value="" pattern="[0-9]*" placeholder="Pincode" maxlength="6" minlength="6">
         </div>
 
           <div class="form-group col-lg-6">
             <label for="inputState">State</label>
-            <select class="form-control" id="inputState" name="state">
+            <select  required class="form-control" id="inputState" name="state">
               <option value="SelectState">Select State</option>
               <option value="Andra Pradesh">Andra Pradesh</option>
               <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -173,7 +178,7 @@
           </div>
           <div class="form-group col-lg-6">
             <label for="inputDistrict">District</label>
-            <select class="form-control" id="inputDistrict" name="district">
+            <select  required class="form-control" id="inputDistrict" name="district">
               <option value="">-- select one -- </option>
             </select>
           </div>
@@ -189,28 +194,37 @@
 
           <div class="col-lg-6">
             <label for="">Identity number :</label>
-            <input class="border1 " type="text" name="id_number" value="" placeholder="Enter" maxlength="16" minlength="10">
+            <input required class="border1 " type="text" name="id_number" value="" placeholder="Enter" pattern="[0-9]*" maxlength="16" minlength="10">
           </div>
           <div class="col-lg-6">
             <label for="">Upload selected document :</label>
-            <input type="file" name="upload_document" value="" placeholder="Upload">
+            <input  required type="file" name="upload_document" value="" placeholder="Upload"><br>
+            <p>*Only jpeg files are supported.</p>
           </div>
-          <div class="division-submit"><a href="application.html"><input class="btn btn-primary btn1"type="submit" name="" value="Submit"></a>
+          <div class="division-submit"><a href=""><input class="btn btn-primary btn1"type="submit" name="" value="Submit"></a>
         </div></div>
       </form>
     </div>
 
-      <div id="jump" class="footer" style="background-color:#dcdcdc">
-        <!--  -->
-        <!-- <button type="button" class="btn btn-outline-secondary bt1" style="color:white;  -color:white;"></button> -->
-        <a class="footer-icon" href="https://www.facebook.com" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a>
-        <a class="footer-icon" href="https://twitter.com/adityavyas861" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
-        <a class="footer-icon" href="https://www.instagram.com/_adityaa30_/" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
-        <a class="footer-icon" href="mailto:adityavyascs@gmail.com" target="_blank"><i class="social-icon fas fa-envelope"></i></a>
-
-
-        <p class="copyright">© Copyright 2022 Voter Portel</p>
+    <footer id="footer" style="position:fixed;bottom:0;width:100%;">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 text-lg-left text-center">
+            <div class="copyright">
+              &copy; Copyright <strong>Voter Portal</strong>. All Rights Reserved
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+              <a href="home1" class="scrollto">Home</a>
+              <a href="aboutus" class="scrollto">About</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
       </div>
+    </footer>
 
       <script>
       var AndraPradesh = ["Anantapur","Chittoor","East Godavari","Guntur","Kadapa","Krishna","Kurnool","Prakasam","Nellore","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari"];
@@ -316,7 +330,7 @@ switch (StateSelected) {
       optionsList = Nagaland;
       break;
   case  "Orissa":
-      optionsList = Orissa;
+      optionsList = Odisha;
       break;
   case "Punjab":
       optionsList = Punjab;
@@ -375,6 +389,44 @@ for(var i = 0; i < optionsList.length; i++){
 $("#inputDistrict").html(htmlString);
 
 });
+
+
+
+
+///////////////////////VALIDATION/////////////////////////////////////
+function validateName() {
+  const input = document.getElementById('fname');
+  const errorSpan = document.getElementById('name-error');
+  if (input.value.trim() === '') {
+    errorSpan.textContent = 'Please enter a name';
+  } else if (!input.validity.valid) {
+    errorSpan.textContent = 'Name must contain only uppercase letters';
+  } else {
+    errorSpan.textContent = '';
+  }
+
+  if (input.value.trim() === '') {
+    input.classList.add('error');
+    return false;
+  }
+  return true;
+
+}
+document.getElementById('form').addEventListener('submit', validateDOB);
+function validateDOB(event) {
+  event.preventDefault(); // prevent the form from submitting
+  const dob = new Date(document.getElementById('dob').value);
+  const currentYear = new Date().getFullYear();
+  const age = currentYear - dob.getFullYear();
+  if (age < 18) {
+    alert('You must be at least 18 years old apply for VoterId card.');
+  } else {
+    // submit the form
+    document.getElementById('form').submit();
+  }
+}
+
+
       </script>
 </body>
 

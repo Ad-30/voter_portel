@@ -39,29 +39,29 @@
 <body class="text-center">
 
   <main class="form-signin w-100 m-auto">
-    <form action="/home" method="POST" class="signin">
-      <img class="mb-4" src="https://voterportal.eci.gov.in/nvsp/image/eci-logo.png" alt="" width="72" height="57">
+    <form action="/signup" method="POST" class="signin">
+
 
       <h1 class="h3 mb-3 fw-normal">Sign-up</h1>
 
       <div class="form-floating">
-        <input name="fname" type="text" class="form-control top" id="floatingInput1" placeholder="First name">
+        <input name="fname" type="text" class="form-control top" id="floatingInput1" placeholder="First name" required autofocus >
         <label for="floatingInput">First name</label>
       </div>
       <div class="form-floating">
-        <input name="lname" type="text" class="form-control bottom" id="floatingInput2" placeholder="Last name">
+        <input name="lname" type="text" class="form-control bottom" id="floatingInput2" placeholder="Last name" autofocus >
         <label for="floatingPassword">Last name</label>
       </div>
       <div class="form-floating">
-        <input name="email" type="email" class="form-control bottom" id="floatingInput2" placeholder="E-mail">
+        <input name="username" type="email" class="form-control bottom" id="floatingInput2" placeholder="E-mail" required autofocus autocomplete="@gmail.com">
         <label for="floatingPassword">E-mail</label>
       </div>
       <div class="form-floating">
-        <input name="mob" type="number" class="form-control bottom" id="floatingInput2" placeholder="Mobile no.">
+        <input name="mob" type="text" class="form-control bottom" id="floatingInput2" placeholder="Mobile no." pattern="\d*" maxlength="10" required autofocus>
         <label for="floatingPassword">Mobile no.</label>
       </div>
       <div class="form-floating">
-        <input name="password" type="password" class="form-control bottom" id="floatingInput3" placeholder="Last name">
+        <input name="password" type="password" class="form-control bottom" id="floatingInput3" placeholder="password" required autofocus>
         <label for="floatingPassword">Password</label>
       </div>
 
@@ -69,7 +69,7 @@
 
 
       <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
     </form>
   </main>
 

@@ -172,7 +172,19 @@
           <p>Identity number  : <%=data.identity_no %></p>
 
           </div>
+        <div class="col-lg-6">
+          <!-- <img src="view-pdf?id=<%=data._id%>" width="100%" height="200"> -->
+          <a href="view-pdf?id=<%=data._id%>" download>
+            <img src="view-pdf?id=<%=data._id%>" alt="image">
+          </a>
 
+
+        </div>
+        <form class="" action="/verify/<%=data._id%>" method="post">
+          <label for="">Reason for rejection : </label>
+          <input type="text" name="reason" value="">
+          <input type="submit" name="" value="Submit">
+        </form>
           <!-- <div class="list101">
             <select class="" name="reason">
               <option value="Upload documents again with correct data.">Upload documents again with correct data.</option>
