@@ -9,6 +9,7 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 const multer = require('multer');
+require('dotenv').config();
 const PDFDocument = require('pdfkit');
 const storage = multer.memoryStorage();
 const upload = multer({
@@ -48,8 +49,8 @@ passport.use(new LocalStrategy(function verify(username, password, cb) {
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: '2021pietcsaditya010@poornima.org',
-    pass: '))~4&Rz~BqLnFy@'
+    user: process.env.MAIL_ID1,
+    pass: process.env.MAIL_PASSWORD
   }
 });
 
@@ -83,7 +84,7 @@ let application_number = "";
 let reason = "";
 let dob = "";
 let address = "";
- mongoose.connect('mongodb+srv://aditya:jpRuMoJrw5KdwIox@cluster0.x9qucfu.mongodb.net/voterDB');
+ mongoose.connect(process.env.MONGO);
 //mongoose.connect("mongodb://localhost:27017/voterDB");
 
 const userSchema = new mongoose.Schema({
@@ -286,13 +287,15 @@ app.post("/about", function(req, res) {
       var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: '2021pietcsaditya010@poornima.org',
-          pass: '))~4&Rz~BqLnFy@'
+          user: process.env.MAIL_ID1,
+          pass: process.env.MAIL_PASSWORD
+          // user: "${process.env.MAIL_ID1}!",
+          // pass: "${process.env.MAIL_PASSWORD}!"
         }
       });
 
       var mailOptions = {
-        from: '2021pietcsaditya010@poornima.org',
+        from: '"Votar Portal" <process.env.MAIL_ID1>',
         to: mail_id,
         subject: 'Application submitted',
         text: '' + '' + rid + ' .',
@@ -375,7 +378,7 @@ app.get("/status2/:id", function(req, res) {
 
     res.render("status", {
       id: req.params.id,
-      
+
     });
   });
 });
@@ -458,7 +461,7 @@ app.get("/approve/:ApplicationId", function(req, res) {
       });
 
       var mailOptions = {
-        from: '2021pietcsaditya010@poornima.org',
+        from: '"Votar Portal" <process.env.MAIL_ID1>',
         to: mail_id,
         subject: 'Application Approved',
         text: '' + '' + requestedApplicationId + ' .',
@@ -541,13 +544,13 @@ app.get("/disapprove/:ApplicationId", function(req, res) {
       var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: '2021pietcsaditya010@poornima.org',
-          pass: '))~4&Rz~BqLnFy@'
+          user: process.env.MAIL_ID1,
+          pass: process.env.MAIL_PASSWORD
         }
       });
 
       var mailOptions = {
-        from: '2021pietcsaditya010@poornima.org',
+        from: '"Votar Portal" <process.env.MAIL_ID1>',
         to: mail_id,
         subject: 'Application Rejected',
         text: '' + '' + requestedApplicationId + ' .',
@@ -570,7 +573,7 @@ app.get("/disapprove/:ApplicationId", function(req, res) {
 
 app.get("/status", function(req, res) {
   res.render("status", {
-
+      id:""
   });
 });
 app.post("/status", function(req, res) {
@@ -633,6 +636,7 @@ app.get("/aboutus", function(req, res) {
   res.render("aboutus");
 });
 app.post("/", function(req, res) {
+
   res.render("index-new");
 });
 
